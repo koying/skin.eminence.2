@@ -20,10 +20,10 @@
                 <top>70</top>
                 <left>bigpad</left>
                 <right>bigpad</right>
-                <height>576</height>
+                <height>645</height>
                 <control type="group">
                     <width>100%</width>
-                    <height>576</height>
+                    <height>645</height>
                     <include name="Object_Line">
                         <param name="width" value="760" />
                         <param name="label" value="$INFO[Control.GetLabel(2)]" />
@@ -35,34 +35,10 @@
                         <onleft>8000</onleft>
                         <onright>8000</onright>
                         <width>100%</width>
-                        <height>576</height>
+                        <height>645</height>
                         <orientation>vertical</orientation>
                         <itemgap>0</itemgap>
                     </control>
-                </control>
-            </control>
-            <!-- Ok Cancel Defaults -->
-            <control type="grouplist" id="8000">
-                <centerleft>50%</centerleft>
-                <width>760</width>
-                <bottom>bigpad</bottom>
-                <height>69</height>
-                <align>center</align>
-                <itemgap>20</itemgap>
-                <onup>5</onup>
-                <ondown>noop</ondown>
-                <orientation>horizontal</orientation>
-                <control type="button" id="28">
-                    <align>center</align>
-                    <width>370</width>
-                    <label>186</label>
-                    <include>Defs_OptionButton2</include>
-                </control>
-                <control type="button" id="29">
-                    <align>center</align>
-                    <width>370</width>
-                    <label>222</label>
-                    <include>Defs_OptionButton2</include>
                 </control>
             </control>
         </control>
