@@ -1998,6 +1998,13 @@
                             <height>64</height>
                             <align>right</align>
                             <font>Font-ListInfo-Small</font>
+                            <label>$INFO[VideoPlayer.Year,  •  ,]</label>
+                        </control>
+                        <control type="label">
+                            <width>auto</width>
+                            <height>64</height>
+                            <align>right</align>
+                            <font>Font-ListInfo-Small</font>
                             <label>$INFO[VideoPlayer.MPAA, ,]$INFO[VideoPlayer.RatingAndVotes,  •  ,]</label>
                         </control>
                     </control>
