@@ -50,7 +50,7 @@
                                 </control>
                                 <control type="label">
                                     <font>Font-ListInfo-Small-Bold</font>
-                                    <label>$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.Property(Name)]</label>
                                     <left>30</left>
                                     <right>30</right>
                                     <height>100%</height>
@@ -72,7 +72,7 @@
                                 </control>
                                 <control type="label">
                                     <font>Font-ListInfo-Small-Bold</font>
-                                    <label>$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.Property(Name)]</label>
                                     <left>30</left>
                                     <right>30</right>
                                     <height>100%</height>

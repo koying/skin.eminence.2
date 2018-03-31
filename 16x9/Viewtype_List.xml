@@ -418,7 +418,7 @@
                     <height>36</height>
                     <textcolor>ListLabel</textcolor>
                     <font>Font-InfoBox-Title</font>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                 </control>
                 <control type="label">
                     <top>70</top>
@@ -530,7 +530,7 @@
                                     <height>36</height>
                                     <textcolor>Selected</textcolor>
                                     <font>Font-InfoBox-Title</font>
-                                    <label>$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.Property(Name)]</label>
                                 </control>
                                 <control type="label">
                                     <top>70</top>
@@ -645,7 +645,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>ListLabel</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>Container.Content(movies)</visible>
                 </control>
                 <control type="label">
@@ -654,7 +654,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>ListLabel</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>!Container.Content(movies)</visible>
                 </control>
 
@@ -762,7 +762,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>ListLabel</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>!String.IsEmpty(ListItem.Overlay) + !Container.Content(seasons) + !Container.Content(sets) + $PARAM[label2]</visible>
                 </control>
                 <control type="label">
@@ -771,7 +771,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>ListLabel</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>String.IsEmpty(ListItem.Overlay) | Container.Content(seasons) | Container.Content(sets) | !$PARAM[label2]</visible>
                 </control>
 
@@ -824,7 +824,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>Container.Content(movies)</visible>
                 </control>
                 <control type="label">
@@ -833,7 +833,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>!Container.Content(movies)</visible>
                 </control>
 
@@ -930,7 +930,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>!String.IsEmpty(ListItem.Overlay) + !Container.Content(seasons) + !Container.Content(sets) + $PARAM[label2]</visible>
                 </control>
                 <control type="label">
@@ -939,7 +939,7 @@
                     <top>0</top>
                     <height>100%</height>
                     <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Name)]</label>
                     <visible>String.IsEmpty(ListItem.Overlay) | Container.Content(seasons) | Container.Content(sets) | !$PARAM[label2]</visible>
                 </control>
 
@@ -1027,7 +1027,7 @@
             <top>0</top>
             <height>70%</height>
             <textcolor>ListLabel</textcolor>
-            <label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Property(Name)]</label>
             <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
@@ -1036,7 +1036,7 @@
             <top>0</top>
             <height>100%</height>
             <textcolor>ListLabel</textcolor>
-            <label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Property(Name)]</label>
             <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
     </include>
@@ -1070,7 +1070,7 @@
             <top>0</top>
             <height>70%</height>
             <textcolor>Selected</textcolor>
-            <label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Property(Name)]</label>
             <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
@@ -1079,7 +1079,7 @@
             <top>0</top>
             <height>100%</height>
             <textcolor>Selected</textcolor>
-            <label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Property(Name)]</label>
             <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
     </include>

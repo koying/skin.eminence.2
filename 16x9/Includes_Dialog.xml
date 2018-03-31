@@ -169,7 +169,7 @@
                 <font>Font-ListInfo-Small</font>
                 <aligny>center</aligny>
                 <textcolor>ListLabel</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(Name)]</label>
             </control>
         </itemlayout>
         <focusedlayout width="460" height="82">
@@ -186,7 +186,7 @@
                 <font>Font-ListInfo-Small</font>
                 <aligny>center</aligny>
                 <textcolor>Selected</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(Name)]</label>
             </control>
         </focusedlayout>
     </include>
@@ -273,7 +273,7 @@
                 <font>Font-ListInfo-Small</font>
                 <aligny>center</aligny>
                 <textcolor>ListLabel</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(Name)]</label>
             </control>
         </itemlayout>
         <focusedlayout width="374" height="72">
@@ -290,7 +290,7 @@
                 <font>Font-ListInfo-Small</font>
                 <aligny>center</aligny>
                 <textcolor>Selected</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(Name)]</label>
             </control>
         </focusedlayout>
     </include>
@@ -457,7 +457,7 @@
                         <right>30</right>
                         <top>0</top>
                         <height>100%</height>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                     </control>
                     <control type="label">
                         <left>30</left>
@@ -481,7 +481,7 @@
                         <right>30</right>
                         <top>0</top>
                         <height>100%</height>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                         <textcolor>Selected</textcolor>
                     </control>
                     <control type="label">
@@ -513,7 +513,7 @@
                             <right>30</right>
                             <top>0</top>
                             <height>66%</height>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                         <control type="label">
                             <left>148</left>
@@ -530,7 +530,7 @@
                         <right>30</right>
                         <top>0</top>
                         <height>100%</height>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                         <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                     </control>
                 </itemlayout>
@@ -556,7 +556,7 @@
                             <right>30</right>
                             <top>0</top>
                             <height>66%</height>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <textcolor>Selected</textcolor>
                         </control>
                         <control type="label">
@@ -575,7 +575,7 @@
                         <right>30</right>
                         <top>0</top>
                         <height>100%</height>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                         <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                         <textcolor>Selected</textcolor>
                     </control>
@@ -619,7 +619,7 @@
                         <textcolor>ListLabel</textcolor>
                         <font>Font-ListInfo-Small-Bold</font>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                     </control>
                     <control type="label">
                         <left>bigpad</left>
@@ -646,7 +646,7 @@
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo-Small-Bold</font>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Property(Name)]</label>
                     </control>
                     <control type="label">
                         <left>bigpad</left>
@@ -701,11 +701,11 @@
                             <textcolor>ListLabel</textcolor>
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </control>
                 </itemlayout>
-                <itemlayout width="$PARAM[width]" height="144" condition="!$PARAM[noimage] + ![[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Label,icons)]  | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
+                <itemlayout width="$PARAM[width]" height="144" condition="!$PARAM[noimage] + ![[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Property(Name),icons)]  | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
                     <control type="group">
                         <left>$PARAM[pad]</left>
                         <control type="image">
@@ -723,7 +723,7 @@
                             <textcolor>ListLabel</textcolor>
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
@@ -739,7 +739,7 @@
                                 <textcolor>ListLabel</textcolor>
                                 <font>Font-ListInfo-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <width>100%</width>
@@ -753,7 +753,7 @@
                         </control>
                     </control>
                 </itemlayout>
-                <itemlayout width="139.75" height="144" condition="!$PARAM[noimage] + [[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Label,icons)]  | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
+                <itemlayout width="139.75" height="144" condition="!$PARAM[noimage] + [[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Property(Name),icons)]  | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
 
                     <control type="image">
                         <centerleft>50%</centerleft>
@@ -782,11 +782,11 @@
                             <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="$PARAM[width]" height="144" condition="!$PARAM[noimage] + ![[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Label,icons)] | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
+                <focusedlayout width="$PARAM[width]" height="144" condition="!$PARAM[noimage] + ![[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Property(Name),icons)] | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
                     <control type="image">
                         <width>100%</width>
                         <height>100%</height>
@@ -809,7 +809,7 @@
                             <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
@@ -825,7 +825,7 @@
                                 <textcolor>Selected</textcolor>
                                 <font>Font-ListInfo-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <width>100%</width>
@@ -839,7 +839,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <focusedlayout width="139.75" height="144" condition="!$PARAM[noimage] + [[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Label,icons)] | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
+                <focusedlayout width="139.75" height="144" condition="!$PARAM[noimage] + [[String.StartsWith(ListItem.FolderPath,special://skin/extras/icons/) + !String.IsEqual(ListItem.Property(Name),icons)] | [String.StartsWith(Container($PARAM[id]).ListItem(1).FolderPath,special://skin/extras/icons/) + String.IsEqual(ListItem.Label,..)]]">
                     <control type="image">
                         <width>100%</width>
                         <height>100%</height>
@@ -908,7 +908,7 @@
                             <right>30</right>
                             <top>0</top>
                             <height>100%</height>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                         <control type="label">
                             <left>30</left>
@@ -933,7 +933,7 @@
                             <right>30</right>
                             <top>0</top>
                             <height>100%</height>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <textcolor>Selected</textcolor>
                         </control>
                         <control type="label">

@@ -56,7 +56,7 @@
                             <control type="label">
                                 <left>bigpad</left>
                                 <right>bigpad</right>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <font>Font-ListInfo-Small</font>
                                 <textcolor>ListLabel</textcolor>
                             </control>
@@ -68,7 +68,7 @@
                             <control type="label">
                                 <left>bigpad</left>
                                 <right>bigpad</right>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <textcolor>Selected</textcolor>
                                 <font>Font-ListInfo-Small</font>
                             </control>
@@ -103,7 +103,7 @@
                                         <textoffsetx>bigpad</textoffsetx>
                                         <height>72</height>
                                         <textcolor>ListLabel</textcolor>
-                                        <info>ListItem.Label</info>
+                                        <info>ListItem.Property(Name)</info>
                                         <font>Font-ListInfo-Small</font>
                                     </control>
                                     <control type="label">
@@ -127,7 +127,7 @@
                                         <align>left</align>
                                         <font>Font-ListInfo-Small-Bold</font>
                                         <textcolor>$VAR[HighlightColor2]</textcolor>
-                                        <info>ListItem.Label</info>
+                                        <info>ListItem.Property(Name)</info>
                                     </control>
                                 </control>
                                 <!-- boolean value -->
@@ -176,7 +176,7 @@
                                         <textoffsetx>bigpad</textoffsetx>
                                         <height>72</height>
                                         <textcolor>Selected</textcolor>
-                                        <info>ListItem.Label</info>
+                                        <info>ListItem.Property(Name)</info>
                                         <font>Font-ListInfo-Small</font>
                                     </control>
                                     <control type="label">
@@ -200,7 +200,7 @@
                                         <align>left</align>
                                         <font>Font-ListInfo-Small-Bold</font>
                                         <textcolor>$VAR[HighlightColor2]</textcolor>
-                                        <info>ListItem.Label</info>
+                                        <info>ListItem.Property(Name)</info>
                                     </control>
                                 </control>
                                 <!-- boolean value -->
@@ -277,7 +277,7 @@
                                     <centertop>37%</centertop>
                                     <font>Font-ListInfo-Small-Bold</font>
                                     <textcolor>ListLabel</textcolor>
-                                    <info>ListItem.Label</info>
+                                    <info>ListItem.Property(Name)</info>
                                     <visible>true</visible>
                                 </control>
                                 <!-- Interface -->
@@ -417,7 +417,7 @@
                                     <centertop>37%</centertop>
                                     <font>Font-ListInfo-Small-Bold</font>
                                     <textcolor>Selected</textcolor>
-                                    <info>ListItem.Label</info>
+                                    <info>ListItem.Property(Name)</info>
                                     <visible>true</visible>
                                 </control>
                                 <!-- Interface -->
@@ -669,7 +669,7 @@
                                     <height>30</height>
                                     <font>Font-ListInfo-Small-Bold</font>
                                     <textcolor>ListLabel</textcolor>
-                                    <info>ListItem.Label</info>
+                                    <info>ListItem.Property(Name)</info>
                                     <visible>true</visible>
                                 </control>
                                 <!-- Connection Address -->
@@ -845,7 +845,7 @@
                                     <height>30</height>
                                     <font>Font-ListInfo-Small-Bold</font>
                                     <textcolor>Selected</textcolor>
-                                    <info>ListItem.Label</info>
+                                    <info>ListItem.Property(Name)</info>
                                     <visible>true</visible>
                                 </control>
                                 <!-- Connection Address -->

@@ -38,7 +38,7 @@
                                 <align>left</align>
                                 <aligny>top</aligny>
                                 <font>Font-OSD</font>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <textcolor>ListLabel</textcolor>
                             </control>
                         </rulerlayout>
@@ -163,7 +163,7 @@
                                 <width>285</width>
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>ListLabel</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                             </control>
                             <control type="label" id="1">
@@ -172,7 +172,7 @@
                                 <height>67</height>
                                 <textcolor>ListLabel</textcolor>
                                 <textoffsetx>0</textoffsetx>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
                             </control>
                         </itemlayout>
@@ -209,7 +209,7 @@
                                 <width>285</width>
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                             </control>
                             <control type="label" id="1">
@@ -218,7 +218,7 @@
                                 <height>67</height>
                                 <textcolor>Selected</textcolor>
                                 <textoffsetx>0</textoffsetx>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                                 <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
                             </control>
                         </focusedlayout>

@@ -1417,7 +1417,7 @@
                                 <align>left</align>
                                 <textcolor>main_fg_70</textcolor>
                                 <selectedcolor>Highlight2</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                             </control>
                         </itemlayout>
                         <focusedlayout height="60" width="1000">
@@ -1426,7 +1426,7 @@
                                 <align>left</align>
                                 <textcolor>Highlight2</textcolor>
                                 <selectedcolor>Highlight2</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                                 <font>font_lyrics_bold</font>
                             </control>
                         </focusedlayout>
@@ -1448,7 +1448,7 @@
                                 <width>1000</width>
                                 <textcolor>main_fg_70</textcolor>
                                 <selectedcolor>Highlight2</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                             </control>
                         </itemlayout>
                         <focusedlayout height="60">
@@ -1456,7 +1456,7 @@
                                 <width>1000</width>
                                 <textcolor>Highlight2</textcolor>
                                 <selectedcolor>Highlight2</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                             </control>
                         </focusedlayout>
                     </control>
@@ -1474,7 +1474,7 @@
         <control type="group">
             <animation effect="zoom" start="100" end="66" condition="true">Conditional</animation>
             <animation effect="slide" start="0" end="1080,400" condition="true">Conditional</animation>
-            <visible>!String.IsEmpty(Container(110).ListItem.Label)</visible>
+            <visible>!String.IsEmpty(Container(110).ListItem.Property(Name))</visible>
             <control type="group">
                 <visible>[!String.IsEmpty(Window(Home).Property(culrc.islrc)) + Integer.IsGreater(Container(110).ListItem.Property(duration),299) + !Integer.IsGreater(Container(110).ListItem.Property(duration),1449)] | String.IsEmpty(Container(110).ListItem.Property(part4))</visible>
                 <!--Short LINEA 1 & 6-->
@@ -2460,7 +2460,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <selectedcolor>$VAR[HighlightColor2]</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                                 <font>Font-ListInfo</font>
                             </control>
                         </itemlayout>
@@ -2470,7 +2470,7 @@
                                 <align>left</align>
                                 <textcolor>$VAR[HighlightColor2]</textcolor>
                                 <selectedcolor>$VAR[HighlightColor2]</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                                 <font>Font-WidgetInfoTitle</font>
                             </control>
                         </focusedlayout>
@@ -2491,7 +2491,7 @@
                             <control type="label">
                                 <width>1000</width>
                                 <selectedcolor>$VAR[HighlightColor2]</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                             </control>
                         </itemlayout>
                         <focusedlayout height="60">
@@ -2499,7 +2499,7 @@
                                 <width>1000</width>
                                 <textcolor>$VAR[HighlightColor2]</textcolor>
                                 <selectedcolor>$VAR[HighlightColor2]</selectedcolor>
-                                <info>ListItem.Label</info>
+                                <info>ListItem.Property(Name)</info>
                             </control>
                         </focusedlayout>
                     </control>

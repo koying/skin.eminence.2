@@ -51,7 +51,7 @@
                                 <textcolor>ListLabel</textcolor>
                                 <font>Font-ListInfo-Small-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout width="460" height="72">
@@ -67,7 +67,7 @@
                                 <textcolor>Selected</textcolor>
                                 <font>Font-ListInfo-Small-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                         </focusedlayout>
                     </control>
@@ -147,7 +147,7 @@
                                 <textcolor>ListLabel</textcolor>
                                 <font>Font-ListInfo-Small-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(AddonName), - ,]</label>
+                                <label>$INFO[ListItem.Property(Name)]$INFO[ListItem.Property(AddonName), - ,]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout width="listlinew" height="72">
@@ -212,7 +212,7 @@
                                 <textcolor>Selected</textcolor>
                                 <font>Font-ListInfo-Small-Bold</font>
                                 <aligny>center</aligny>
-                                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(AddonName), - ,]</label>
+                                <label>$INFO[ListItem.Property(Name)]$INFO[ListItem.Property(AddonName), - ,]</label>
                             </control>
                         </focusedlayout>
                     </control>

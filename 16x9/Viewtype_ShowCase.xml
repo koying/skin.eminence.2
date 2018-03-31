@@ -391,7 +391,7 @@
                             <height>44</height>
                             <align>center</align>
                             <font>Font-InfoBox-Title</font>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                         <control type="label">
                             <left>pad</left>
@@ -685,7 +685,7 @@
     <variable name="ShowcaseItem0Var">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.AnimatedPoster)) + !Skin.HasSetting(showanimate.poster)">$INFO[Window(Home).Property(SkinHelper.AnimatedPoster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</value>
+        <value condition="Container.Content(genres)">$INFO[ListItem.Property(Name),special://skin/extras/moviegenres/,.jpg]</value>
         <value>$INFO[ListItem.Property(Icon)]</value>
     </variable>
     <variable name="ShowcaseItem1Var">

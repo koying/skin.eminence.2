@@ -37,7 +37,7 @@
                             <right>pad</right>
                             <height>36</height>
                             <font>Font-InfoBox-Title</font>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                         </control>
                         <control type="label">
                             <left>pad</left>

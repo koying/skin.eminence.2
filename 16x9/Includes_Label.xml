@@ -62,7 +62,7 @@
     </variable>
 
     <variable name="Label_IconLine">
-        <value condition="Control.IsVisible(500) + Control.HasFocus(500)">$INFO[ListItem.Label,-  ,  ]$INFO[ListItem.Year,(,)  ]</value>
+        <value condition="Control.IsVisible(500) + Control.HasFocus(500)">$INFO[ListItem.Property(Name),-  ,  ]$INFO[ListItem.Year,(,)  ]</value>
     </variable>
 
     <variable name="Label_IsRecording">
@@ -154,7 +154,7 @@
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Window.Property(Title)]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(Label)]</value>
         <value condition="[Container.Content(episodes) | Container.Content(seasons)] + !String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
-        <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Name))">$INFO[ListItem.Label]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
     </variable>
 
@@ -190,7 +190,7 @@
     <variable name="Label_Title">
         <value condition="Container.Content(songs)">$INFO[ListItem.Artist]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
-        <value>$INFO[ListItem.Label]</value>
+        <value>$INFO[ListItem.Property(Name)]</value>
     </variable>
 
     <variable name="Label_ExtraInfo_Icons">
@@ -318,7 +318,7 @@
         <value condition="Container(9001).IsUpdating">$LOCALIZE[31090]...</value>
         <value condition="[String.IsEqual(Container(9000).ListItem.Property(widget),Weather) | [String.IsEmpty(Container(9000).ListItem.Property(widget)) + [String.IsEqual(Skin.String(home.fallbackwidget),Weather) | String.IsEqual(Skin.String(home.fallbackwidget.node),Weather)]]] + System.HasAddon(resource.images.weatherfanart.multi)">$INFO[Weather.Temperature,,  ]$INFO[Weather.Conditions]</value>
         <value condition="!String.IsEmpty(Container(9001).ListItem.Title)">$INFO[Container(9001).ListItem.Title]</value>
-        <value>$INFO[Container(9001).ListItem.Label]</value>
+        <value>$INFO[Container(9001).ListItem.Property(Name)]</value>
     </variable>
     <variable name="Label_HomeWidget_Plot">
         <value condition="[String.IsEqual(Container(9000).ListItem.Property(widget),Weather) | [String.IsEmpty(Container(9000).ListItem.Property(widget)) + [String.IsEqual(Skin.String(home.fallbackwidget),Weather) | String.IsEqual(Skin.String(home.fallbackwidget.node),Weather)]]] + System.HasAddon(resource.images.weatherfanart.multi)">$INFO[Window(weather).Property(Current.FeelsLike),$LOCALIZE[402] ,]$INFO[System.TemperatureUnits]$INFO[Window(weather).Property(Current.WindSpeed),[CR], ]$INFO[Window(weather).Property(Current.WindDirection),, [LOWERCASE]$LOCALIZE[404][/LOWERCASE]]$INFO[Window(weather).Property(Current.Humidity),[CR], [LOWERCASE]$LOCALIZE[406][/LOWERCASE]]</value>
@@ -336,7 +336,7 @@
     <variable name="Label_Hub_WidgetLabel">
         <value condition="!String.IsEmpty(Container(9500).ListItem.TvShowTitle)">$INFO[Container(9500).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(9500).ListItem.Artist)">$INFO[Container(9500).ListItem.Artist]</value>
-        <value condition="!String.IsEmpty(Container(9500).ListItem.Label)">$INFO[Container(9500).ListItem.Label]</value>
+        <value condition="!String.IsEmpty(Container(9500).ListItem.Property(Name))">$INFO[Container(9500).ListItem.Label]</value>
     </variable>
     <variable name="Label_Hub_WidgetLabel2">
         <value condition="!String.IsEmpty(Container(9500).ListItem.Episode) + !String.IsEqual(Container(9500).ListItem.Title,Container(9500).ListItem.TvShowTitle)">$INFO[Container(9500).ListItem.Season,,x]$INFO[Container(9500).ListItem.Episode,,. ]$INFO[Container(9500).ListItem.Title]</value>

@@ -376,7 +376,7 @@
                                 <top>30</top>
                                 <height>30</height>
                                 <selectedcolor>ListLabel</selectedcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>160</left>
@@ -424,7 +424,7 @@
                                 <height>30</height>
                                 <selectedcolor>Selected</selectedcolor>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>160</left>

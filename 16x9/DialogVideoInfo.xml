@@ -610,7 +610,7 @@
             <onright>9000</onright>
             <onright>SendClick(5)</onright>
             <onclick>SetProperty(extinfo,2,home)</onclick>
-            <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
+            <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Property(Name)])</onclick>
         </control>
 
         <!-- INFO OVERLAY -->

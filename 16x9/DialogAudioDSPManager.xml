@@ -37,7 +37,7 @@
                             <texture colordiffuse="PosterBorder">common/white.png</texture>
                         </control>
                         <control type="label">
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <include>Defs_OptionButton</include>
                         </control>
                     </itemlayout>
@@ -50,7 +50,7 @@
                         </control>
                         <control type="label">
                             <textcolor>Selected</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Property(Name)]</label>
                             <include>Defs_OptionButton</include>
                         </control>
                     </focusedlayout>
@@ -109,7 +109,7 @@
                                 <top>bigpad</top>
                                 <right>bigpad</right>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -150,7 +150,7 @@
                                 <right>bigpad</right>
                                 <height>60</height>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -211,7 +211,7 @@
                                 <top>bigpad</top>
                                 <right>bigpad</right>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -252,7 +252,7 @@
                                 <right>bigpad</right>
                                 <height>60</height>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
