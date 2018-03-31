@@ -4,7 +4,7 @@
     <controls>
         <include>GlobalOverlay</include>
         <control type="group">
-            <animation effect="slide" start="0" end="298" time="0" condition="Control.IsVisible(3)">Conditional</animation>
+            <animation effect="slide" start="0" end="293" time="0" condition="Control.IsVisible(3)">Conditional</animation>
             <include>Animation_SlideIn</include>
             <include>Animation_FadeOut</include>
             <centerleft>50%</centerleft>

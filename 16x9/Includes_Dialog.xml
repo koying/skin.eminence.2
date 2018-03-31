@@ -380,12 +380,35 @@
             <onright>11</onright>
         </control>
     </include>
+    <!-- Yes No -->
+    <include name="Dialog_YesNo">
+        <include>GlobalOverlay</include>
+        <control type="group">
+            <include>Dialog_Bottom</include>
+            <control type="grouplist">
+                <include>Dialog_Bottom_Grouplist</include>
+                <include>Dialog_Bottom_Yes</include>
+                <include>Dialog_Bottom_No</include>
+            </control>
+        </control>
+    </include>
+    <!-- Ok -->
+    <include name="Dialog_Ok">
+        <include>GlobalOverlay</include>
+        <control type="group">
+            <include>Dialog_Bottom</include>
+            <control type="grouplist">
+                <include>Dialog_Bottom_Grouplist</include>
+                <include>Dialog_Bottom_No</include>
+            </control>
+        </control>
+    </include>
     <!-- Progress -->
     <include name="Dialog_Progress">
         <include>GlobalOverlay</include>
         <control type="group">
             <include>Dialog_Bottom</include>
-            <control type="progress" id="20">
+            <control type="progress">
                 <bottom>152</bottom>
                 <left>90</left>
                 <right>90</right>
@@ -394,7 +417,6 @@
             </control>
             <control type="grouplist">
                 <include>Dialog_Bottom_Grouplist</include>
-                <include>Dialog_Bottom_Yes</include>
                 <include>Dialog_Bottom_No</include>
             </control>
         </control>
@@ -558,7 +580,7 @@
                         <textcolor>Selected</textcolor>
                     </control>
                 </focusedlayout>
-                <include condition="$PARAM[contentvisible]" content="Dialog_BasicList_Content">
+                <include condition="$PARAM[contentvisible]" name="Dialog_BasicList_Content">
                     <param name="content" value="$PARAM[content]" />
                 </include>
             </control>
