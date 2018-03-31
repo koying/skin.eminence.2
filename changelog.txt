@@ -1,3 +1,6 @@
+[B]672.5.46[/B]
+Backport to Jarvis
+
 [B]2.5.46[/B]
 Tweak settings layout
 Add libreelec configuration window and settings button
