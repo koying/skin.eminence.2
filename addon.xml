@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-    id="skin.eminence.2"
+    id="skin.eminenceJ.2"
     version="672.5.46"
-    name="Eminence 2.0"
+    name="Eminence 2.0 for Jarvis"
     provider-name="jurialmunkey">
     <requires>
         <import addon="xbmc.gui" version="5.12.0"/>
