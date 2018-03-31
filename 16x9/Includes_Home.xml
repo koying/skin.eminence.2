@@ -155,7 +155,7 @@
                         <top>16</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
                         <animation effect="fade" start="50" end="50" condition="true">Conditional</animation>
                     </control>
@@ -183,7 +183,7 @@
                         <top>16</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
                     </control>
                     <control type="label">
@@ -248,19 +248,19 @@
                         <top>-6</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
                         <animation effect="fade" start="50" end="50" condition="true">Conditional</animation>
-                        <visible>String.Contains(ListItem.Icon,special://skin/extras/icons/)</visible>
+                        <visible>String.Contains(ListItem.Property(Icon),special://skin/extras/icons/)</visible>
                     </control>
                     <control type="image">
                         <top>16</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="HomeBarFG" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
                         <animation effect="fade" start="50" end="50" condition="true">Conditional</animation>
-                        <visible>!String.Contains(ListItem.Icon,special://skin/extras/icons/)</visible>
+                        <visible>!String.Contains(ListItem.Property(Icon),special://skin/extras/icons/)</visible>
                     </control>
                     <control type="label">
                         <top>120</top>
@@ -287,17 +287,17 @@
                         <top>-6</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
-                        <visible>String.Contains(ListItem.Icon,special://skin/extras/icons/)</visible>
+                        <visible>String.Contains(ListItem.Property(Icon),special://skin/extras/icons/)</visible>
                     </control>
                     <control type="image">
                         <top>16</top>
                         <width>196</width>
                         <height>170</height>
-                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="Selected" diffuse="common/tile.png">$INFO[ListItem.Property(Icon)]</texture>
                         <aspectratio scalediffuse="false">center</aspectratio>
-                        <visible>!String.Contains(ListItem.Icon,special://skin/extras/icons/)</visible>
+                        <visible>!String.Contains(ListItem.Property(Icon),special://skin/extras/icons/)</visible>
                     </control>
                     <control type="label">
                         <top>120</top>
@@ -441,11 +441,11 @@
             <visible>Control.HasFocus(9000) | Control.HasFocus(9002)</visible>
             <include>Dialog_Top</include>
             <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$INFO[Container(9000).ListItem.Label,, ]$LOCALIZE[1034]" />
-                <param name="icon" value="$INFO[Container(9000).ListItem.Icon]" />
+                <param name="icon" value="$INFO[Container(9000).ListItem.Property(Icon)]" />
             </include>
-            <include content="Dialog_Top_Arrows">
+            <include name="Dialog_Top_Arrows">
                 <param name="id" value="9002" />
             </include>
 
@@ -632,35 +632,35 @@
             <height>320</height>
             <orientation>horizontal</orientation>
             <itemgap>0</itemgap>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="-2" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="-1" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="0" />
                 <param name="focuseditem" value="true" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="1" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="2" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="3" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="4" />
                 <param name="focuseditem" value="false" />
             </include>
-            <include content="Object_HomeWidgetPoster">
+            <include name="Object_HomeWidgetPoster">
                 <param name="id" value="5" />
                 <param name="focuseditem" value="false" />
             </include>
@@ -675,19 +675,19 @@
             <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <visible>[String.IsEqual(Container(9000).ListItem.Property(widget),Weather) | [String.IsEmpty(Container(9000).ListItem.Property(widget)) + [String.IsEqual(Skin.String(home.fallbackwidget),Weather) | String.IsEqual(Skin.String(home.fallbackwidget.node),Weather)]]] + System.HasAddon(resource.images.weatherfanart.multi)</visible>
-            <include content="Object_WeatherOutlook">
+            <include name="Object_WeatherOutlook">
                 <param name="day" value="Day0" />
                 <param name="dayname" value="$LOCALIZE[33006]" />
             </include>
-            <include content="Object_WeatherOutlook">
+            <include name="Object_WeatherOutlook">
                 <param name="day" value="Day1" />
                 <param name="dayname" value="$INFO[Window(weather).Property(Day1.Title)]" />
             </include>
-            <include content="Object_WeatherOutlook">
+            <include name="Object_WeatherOutlook">
                 <param name="day" value="Day2" />
                 <param name="dayname" value="$INFO[Window(weather).Property(Day2.Title)]" />
             </include>
-            <include content="Object_WeatherOutlook">
+            <include name="Object_WeatherOutlook">
                 <param name="day" value="Day3" />
                 <param name="dayname" value="$INFO[Window(weather).Property(Day3.Title)]" />
             </include>

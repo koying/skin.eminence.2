@@ -20,7 +20,7 @@
                     <left>bigpad</left>
                     <right>bigpad</right>
                     <height>552</height>
-                    <include content="Object_Line">
+                    <include name="Object_Line">
                         <param name="width" value="1150" />
                         <param name="label" value="19033" />
                     </include>
@@ -72,7 +72,7 @@
                         <width>50%</width>
                         <aspectratio>keep</aspectratio>
                         <fadetime>200</fadetime>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                     <control type="image">
                         <top>-280</top>

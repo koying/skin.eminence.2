@@ -15,12 +15,12 @@
                 <visible>Window.IsVisible(MusicVisualisation.xml)</visible>
                 <include>Furniture_TopBar_Tile</include>
                 <control type="group">
-                    <visible>Player.Muted</visible>
+                    <visible>Window.IsVisible(DialogMuteBug.xml)</visible>
                     <include>Furniture_TopBar_Tile_Content</include>
                 </control>
             </control>
             <control type="group">
-                <visible>!Player.Muted</visible>
+                <visible>!Window.IsVisible(DialogMuteBug.xml)</visible>
                 <control type="image">
                     <posx>44</posx>
                     <posy>26</posy>

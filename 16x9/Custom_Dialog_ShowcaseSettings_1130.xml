@@ -17,7 +17,7 @@
                 <top>28</top>
                 <centerleft>50%</centerleft>
                 <include>Dialog_Background</include>
-                <include content="Dialog_Top_IconHeader">
+                <include name="Dialog_Top_IconHeader">
                     <param name="label" value="$LOCALIZE[31248]" />
                     <param name="icon" value="special://skin/extras/icons/configure.png" />
                 </include>
@@ -29,42 +29,42 @@
                     <include>Object_FlatBackground</include>
                     <control type="grouplist" id="9000">
                         <itemgap>0</itemgap>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="1" />
                             <param name="prev_id" value="0" />
                             <param name="next_id" value="2" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="2" />
                             <param name="prev_id" value="1" />
                             <param name="next_id" value="3" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="3" />
                             <param name="prev_id" value="2" />
                             <param name="next_id" value="4" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="4" />
                             <param name="prev_id" value="3" />
                             <param name="next_id" value="5" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="5" />
                             <param name="prev_id" value="4" />
                             <param name="next_id" value="6" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="6" />
                             <param name="prev_id" value="5" />
                             <param name="next_id" value="7" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="7" />
                             <param name="prev_id" value="6" />
                             <param name="next_id" value="8" />
                         </include>
-                        <include content="Defs_SkinSettings_StoreWidget">
+                        <include name="Defs_SkinSettings_StoreWidget">
                             <param name="id" value="8" />
                             <param name="prev_id" value="7" />
                             <param name="next_id" value="9" />

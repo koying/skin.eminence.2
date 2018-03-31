@@ -397,7 +397,7 @@
         <top>top</top>
         <height>height</height>
         <include>Animation_Info</include>
-        <include content="Defs_SideLabel">
+        <include name="Defs_SideLabel">
             <param name="Label" value="$LOCALIZE[19033]" />
         </include>
     </include>
@@ -406,7 +406,7 @@
             <width>100%</width>
             <label>31097</label>
             <label2>$INFO[Skin.String(Widget.$PARAM[hubid].Label)]</label2>
-            <visible>String.IsEqual(Container(211).ListItem.Label2,Hub $PARAM[hubid]) | String.IsEqual(Container(211).ListItem.Property(Path),ActivateWindow($PARAM[hubid]))</visible>
+            <visible>String.IsEqual(Container(211).ListItem.Property(AddonName),Hub $PARAM[hubid]) | String.IsEqual(Container(211).ListItem.Property(Path),ActivateWindow($PARAM[hubid]))</visible>
             <include>Defs_OptionButton</include>
             <onclick>RunScript(script.skinshortcuts,type=widgets&amp;grouping=widget&amp;skinWidgetPath=Widget.$PARAM[hubid]&amp;skinWidgetName=Widget.$PARAM[hubid].Label&amp;skinWidgetTarget=Widget.$PARAM[hubid].Type)</onclick>
         </control>
@@ -414,7 +414,7 @@
             <width>100%</width>
             <label>31096</label>
             <include>Defs_OptionButton</include>
-            <visible>String.IsEqual(Container(211).ListItem.Label2,Hub $PARAM[hubid]) | String.IsEqual(Container(211).ListItem.Property(Path),ActivateWindow($PARAM[hubid]))</visible>
+            <visible>String.IsEqual(Container(211).ListItem.Property(AddonName),Hub $PARAM[hubid]) | String.IsEqual(Container(211).ListItem.Property(Path),ActivateWindow($PARAM[hubid]))</visible>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x$PARAM[hubid])</onclick>
         </control>
     </include>
@@ -442,7 +442,7 @@
         <animation effect="slide" tween="quadratic" easing="in" time="200" end="1920" start="0" condition="!Window.Next(Settings.xml) + !Window.Next(SettingsCategory.xml) + !Window.Next(SkinSettings.xml) + !Window.Next(SettingsSystemInfo.xml) + !Window.Next(SettingsProfile.xml) + !Window.Next(EventLog.xml) + !Window.Next(FileManager.xml)">WindowClose</animation>
         <include condition="!Skin.HasSetting(global.widescreen)">Defs_SideLabel</include>
         <include condition="!Skin.HasSetting(global.widescreen)">Defs_SideArrows</include>
-        <include content="Object_Headline">
+        <include name="Object_Headline">
             <param name="label" value="$LOCALIZE[5]" />
         </include>
         
@@ -466,7 +466,7 @@
                     <right>10</right>
                     <height>128</height>
                     <aspectratio align="center">keep</aspectratio>
-                    <texture colordiffuse="ListLabel">$INFO[ListItem.Icon]</texture>
+                    <texture colordiffuse="ListLabel">$INFO[ListItem.Property(Icon)]</texture>
                 </control>
                 <control type="label">
                     <left>60</left>
@@ -487,7 +487,7 @@
                     <textcolor>SideArrow</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label2]</label>
+                    <label>$INFO[ListItem.Property(AddonName)]</label>
                 </control>
             </itemlayout>
             <focusedlayout height="246.66" width="settingsitemw">
@@ -507,7 +507,7 @@
                     <right>10</right>
                     <height>128</height>
                     <aspectratio align="center">keep</aspectratio>
-                    <texture colordiffuse="Selected">$INFO[ListItem.Icon]</texture>
+                    <texture colordiffuse="Selected">$INFO[ListItem.Property(Icon)]</texture>
                 </control>
                 <control type="label">
                     <left>60</left>
@@ -528,7 +528,7 @@
                     <textcolor>Selected</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label2]</label>
+                    <label>$INFO[ListItem.Property(AddonName)]</label>
                 </control>
             </focusedlayout>
             <content>

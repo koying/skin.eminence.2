@@ -22,7 +22,7 @@
                     <bottom>148</bottom>
                     <include>Object_FlatBackground</include>
                 </control>
-                <include content="Object_Line">
+                <include name="Object_Line">
                     <param name="width" value="headlinew" />
                     <param name="label" value="$LOCALIZE[35058]" />
                 </include>

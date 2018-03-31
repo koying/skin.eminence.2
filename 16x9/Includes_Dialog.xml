@@ -75,28 +75,28 @@
     <include name="Dialog_Center">
         <param name="id" default="9000" />
         <definition>
-            <include content="Dialog_Center_1">
+            <include name="Dialog_Center_1">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_2">
+            <include name="Dialog_Center_2">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_3">
+            <include name="Dialog_Center_3">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_4">
+            <include name="Dialog_Center_4">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_5">
+            <include name="Dialog_Center_5">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_6">
+            <include name="Dialog_Center_6">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_7">
+            <include name="Dialog_Center_7">
                 <param name="id" value="$PARAM[id]" />
             </include>
-            <include content="Dialog_Center_8">
+            <include name="Dialog_Center_8">
                 <param name="id" value="$PARAM[id]" />
             </include>
         </definition>
@@ -336,7 +336,7 @@
             <align>left</align>
         </control> -->
 
-        <include content="Dialog_Top_IconHeader">
+        <include name="Dialog_Top_IconHeader">
             <param name="label" value="$INFO[Control.GetLabel(1)]" />
             <param name="icon" value="special://skin/extras/icons/kodi.png" />
         </include>
@@ -444,7 +444,7 @@
                         <height>100%</height>
                         <align>right</align>
                         <font>Font-ListInfo</font>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Property(AddonName)]</label>
                     </control>
                 </itemlayout>
 
@@ -469,7 +469,7 @@
                         <height>100%</height>
                         <align>right</align>
                         <font>Font-ListInfo</font>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Property(AddonName)]</label>
                         <textcolor>Selected</textcolor>
                     </control>
                 </focusedlayout>
@@ -482,10 +482,10 @@
                         <bottom>pad</bottom>
                         <width>118</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                     <control type="group">
-                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
                         <control type="label">
                             <left>148</left>
                             <right>30</right>
@@ -500,7 +500,7 @@
                             <height>66%</height>
                             <align>left</align>
                             <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                         </control>
                     </control>
                     <control type="label">
@@ -509,7 +509,7 @@
                         <top>0</top>
                         <height>100%</height>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>String.IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                     </control>
                 </itemlayout>
 
@@ -525,10 +525,10 @@
                         <bottom>pad</bottom>
                         <width>118</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                     <control type="group">
-                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
                         <control type="label">
                             <left>148</left>
                             <right>30</right>
@@ -544,7 +544,7 @@
                             <height>66%</height>
                             <align>left</align>
                             <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                             <textcolor>Selected</textcolor>
                         </control>
                     </control>
@@ -554,7 +554,7 @@
                         <top>0</top>
                         <height>100%</height>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>String.IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                         <textcolor>Selected</textcolor>
                     </control>
                 </focusedlayout>
@@ -607,7 +607,7 @@
                         <textcolor>ListLabel</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Property(AddonName)]</label>
                         <visible>$PARAM[label2]</visible>
                     </control>
                 </itemlayout>
@@ -634,7 +634,7 @@
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Property(AddonName)]</label>
                         <visible>$PARAM[label2]</visible>
                     </control>
                 </focusedlayout>
@@ -692,7 +692,7 @@
                             <width>118</width>
                             <height>118</height>
                             <aspectratio>keep</aspectratio>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
                             <left>148</left>
@@ -702,12 +702,12 @@
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
-                            <visible>String.IsEmpty(ListItem.Label2)</visible>
+                            <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
                         </control>
                         <control type="group">
-                            <visible>!String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(AddonName)) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
                             <left>148</left>
                             <right>30</right>
                             <control type="label">
@@ -739,7 +739,7 @@
                         <width>118</width>
                         <height>118</height>
                         <aspectratio>keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout width="$PARAM[width]" height="72" condition="$PARAM[noimage]">
@@ -778,7 +778,7 @@
                             <width>118</width>
                             <height>118</height>
                             <aspectratio>keep</aspectratio>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
                             <left>148</left>
@@ -788,12 +788,12 @@
                             <font>Font-ListInfo-Bold</font>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
-                            <visible>String.IsEmpty(ListItem.Label2)</visible>
+                            <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
                         </control>
                         <control type="group">
-                            <visible>!String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(AddonName)) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
                             <left>148</left>
                             <right>30</right>
                             <control type="label">
@@ -829,7 +829,7 @@
                         <width>118</width>
                         <height>118</height>
                         <aspectratio>keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -895,7 +895,7 @@
                             <height>100%</height>
                             <align>right</align>
                             <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                         </control>
                     </itemlayout>
 
@@ -921,7 +921,7 @@
                             <height>100%</height>
                             <align>right</align>
                             <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                             <textcolor>Selected</textcolor>
                         </control>
                     </focusedlayout>

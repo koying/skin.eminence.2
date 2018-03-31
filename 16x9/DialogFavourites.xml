@@ -11,7 +11,7 @@
             <bottom>80</bottom>
             <height>532</height>
             <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[1036]" />
                 <param name="icon" value="special://skin/extras/icons/favourites.png" />
             </include>
@@ -23,10 +23,10 @@
                 <include>Object_FlatBackground</include>
                 <control type="image">
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="DefaultAddon.png">$INFO[Container(450).ListItem.Icon]</texture>
+                    <texture background="true" fallback="DefaultAddon.png">$INFO[Container(450).ListItem.Property(Icon)]</texture>
                 </control>
             </control>
-            <include content="Dialog_FavouriteList">
+            <include name="Dialog_FavouriteList">
                 <param name="id" value="450" />
                 <param name="left" value="472" />
                 <param name="moveid" value="noop" />

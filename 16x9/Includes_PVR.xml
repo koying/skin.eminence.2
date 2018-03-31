@@ -50,7 +50,7 @@
                                     <top>pad</top>
                                     <bottom>pad</bottom>
                                     <aspectratio>keep</aspectratio>
-                                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                                 </control>
                                 <control type="progress">
                                     <left>160</left>
@@ -116,7 +116,7 @@
                                     <top>pad</top>
                                     <bottom>pad</bottom>
                                     <aspectratio>keep</aspectratio>
-                                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                                 </control>
                                 <control type="progress">
                                     <left>160</left>
@@ -219,7 +219,7 @@
                                     <top>pad</top>
                                     <bottom>pad</bottom>
                                     <aspectratio>keep</aspectratio>
-                                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                                 </control>
                                 <control type="label">
                                     <left>100</left>
@@ -283,7 +283,7 @@
                                     <top>pad</top>
                                     <bottom>pad</bottom>
                                     <aspectratio>keep</aspectratio>
-                                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                                 </control>
                                 <control type="label">
                                     <left>100</left>
@@ -368,7 +368,7 @@
                                 <top>pad</top>
                                 <bottom>pad</bottom>
                                 <aspectratio>keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                                <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                             </control>
                             <control type="label">
                                 <left>160</left>
@@ -385,7 +385,7 @@
                                 <height>30</height>
                                 <font>Font-ListInfo</font>
                                 <selectedcolor>ListLabel</selectedcolor>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]</label>
                             </control>
                             <control type="image">
                                 <right>30</right>
@@ -415,7 +415,7 @@
                                 <top>pad</top>
                                 <bottom>pad</bottom>
                                 <aspectratio>keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                                <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                             </control>
                             <control type="label">
                                 <left>160</left>
@@ -434,7 +434,7 @@
                                 <font>Font-ListInfo</font>
                                 <selectedcolor>Selected</selectedcolor>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]</label>
                             </control>
                             <control type="image">
                                 <right>30</right>
@@ -547,14 +547,14 @@
             <include condition="!Skin.HasSetting(HorizontalMenus)">Dialog_Center_Def</include>
             <include condition="Skin.HasSetting(HorizontalMenus)">Dialog_Top</include>
             <include condition="Skin.HasSetting(HorizontalMenus)">Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31068]" />
                 <param name="icon" value="special://skin/extras/icons/settings.png" />
             </include>
-            <include content="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="9000" />
             </include>
-            <include content="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="9000" />
             </include>
 

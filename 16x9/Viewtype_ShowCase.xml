@@ -134,7 +134,7 @@
                                         </control>
                                         <control type="group">
                                             <include>WatchedOverlayShowCase</include>
-                                            <include content="Defs_WatchedOverlay">
+                                            <include name="Defs_WatchedOverlay">
                                                 <param name="pos" value="-1" />
                                             </include>
                                         </control>
@@ -253,7 +253,7 @@
                                         </control>
                                         <control type="group">
                                             <include>WatchedOverlayShowCase</include>
-                                            <include content="Defs_WatchedOverlay">
+                                            <include name="Defs_WatchedOverlay">
                                                 <param name="pos" value="1" />
                                             </include>
                                         </control>
@@ -524,7 +524,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="-1" />
             </include>
         </control>
@@ -551,7 +551,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="1" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -566,7 +566,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="2" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -581,7 +581,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="3" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -596,7 +596,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="4" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -611,7 +611,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="5" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -626,7 +626,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="6" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -641,7 +641,7 @@
         </control>
         <control type="group">
             <include>WatchedOverlayShowCase</include>
-            <include content="Defs_WatchedOverlay">
+            <include name="Defs_WatchedOverlay">
                 <param name="pos" value="7" />
             </include>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
@@ -686,7 +686,7 @@
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.AnimatedPoster)) + !Skin.HasSetting(showanimate.poster)">$INFO[Window(Home).Property(SkinHelper.AnimatedPoster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</value>
-        <value>$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Property(Icon)]</value>
     </variable>
     <variable name="ShowcaseItem1Var">
         <value condition="!String.IsEmpty(ListItem(1).Art(poster))">$INFO[ListItem(1).Art(poster)]</value>

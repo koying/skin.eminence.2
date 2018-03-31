@@ -30,7 +30,7 @@
                 <top>-8</top>
                 <bottom>bigpad</bottom>
                 <include>Dialog_Background</include>
-                <include content="Dialog_Top_IconHeader">
+                <include name="Dialog_Top_IconHeader">
                     <param name="label" value="$ADDON[service.libreelec.settings 600]" />
                     <param name="icon" value="special://skin/extras/icons/libreelec.png" />
                 </include>

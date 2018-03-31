@@ -28,7 +28,7 @@
                 <top>-8</top>
                 <bottom>bigpad</bottom>
                 <include>Dialog_Background</include>
-                <include content="Dialog_Top_IconHeader">
+                <include name="Dialog_Top_IconHeader">
                     <param name="label" value="$LOCALIZE[31239]" />
                     <param name="icon" value="special://skin/extras/icons/year.png" />
                 </include>
@@ -41,7 +41,7 @@
                         <right>bigpad</right>
                         <include>Object_FlatBackground</include>
                     </control>
-                    <include content="Dialog_ImageList">
+                    <include name="Dialog_ImageList">
                         <param name="id" value="50" />
                         <param name="type" value="panel" />
                         <param name="moveid" value="9000" />
@@ -60,11 +60,11 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>Dialog_Top</include>
             <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31068]" />
                 <param name="icon" value="special://skin/extras/icons/settings.png" />
             </include>
-            <include content="Dialog_Top_Arrows">
+            <include name="Dialog_Top_Arrows">
                 <param name="id" value="9000" />
             </include>
 

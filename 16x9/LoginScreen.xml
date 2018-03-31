@@ -44,10 +44,10 @@
                             <centerleft>50%</centerleft>
                             <width>256</width>
                             <height>256</height>
-                            <texture fallback="DefaultUser.png" colordiffuse="ListLabel">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="DefaultUser.png" colordiffuse="ListLabel">$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                             <left>bigpad</left>
                             <right>bigpad</right>
                             <bottom>30</bottom>
@@ -84,10 +84,10 @@
                             <centerleft>50%</centerleft>
                             <width>256</width>
                             <height>256</height>
-                            <texture fallback="DefaultUser.png">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="DefaultUser.png">$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Property(AddonName)]</label>
                             <left>bigpad</left>
                             <right>bigpad</right>
                             <bottom>30</bottom>

@@ -22,14 +22,14 @@
                 <include condition="!Skin.HasSetting(HorizontalMenus)">Dialog_Center_Background</include>
             </control>
 
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31069]" />
                 <param name="icon" value="special://skin/extras/icons/settings.png" />
             </include>
-            <include content="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="996" />
             </include>
-            <include content="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="996" />
             </include>
 

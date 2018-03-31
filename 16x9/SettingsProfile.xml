@@ -28,7 +28,7 @@
                 <top>-8</top>
                 <bottom>bigpad</bottom>
                 <include>Dialog_Background</include>
-                <include content="Dialog_Top_IconHeader">
+                <include name="Dialog_Top_IconHeader">
                     <param name="label" value="$VAR[Label_SettingsHeader,, $LOCALIZE[5]]" />
                     <param name="icon" value="$VAR[Image_SettingsHeader]" />
                 </include>
@@ -74,7 +74,7 @@
                     <left>bigpad</left>
                     <right>0</right>
                     <bottom>0</bottom>
-                    <include content="Dialog_ImageList">
+                    <include name="Dialog_ImageList">
                         <param name="id" value="2" />
                         <param name="moveid" value="5" />
                         <param name="onup" value="5" />

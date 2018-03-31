@@ -13,11 +13,11 @@
                 <include condition="Skin.HasSetting(SwitchSides)">Defs_LeftSide</include>
                 <include condition="!Skin.HasSetting(SwitchSides)">Defs_RightSide</include>
                 <width>posterw</width>
-                <include content="Object_Poster">
+                <include name="Object_Poster">
                     <param name="width" value="posterw" />
                 </include>
             </control>
-            <include content="View_List">
+            <include name="View_List">
                 <param name="viewlabel" value="31223" />
                 
                 <param name="width" value="listw" />
@@ -41,11 +41,11 @@
                 <include condition="Skin.HasSetting(SwitchSides)">Defs_LeftSide</include>
                 <include condition="!Skin.HasSetting(SwitchSides)">Defs_RightSide</include>
                 <width>posterh</width>
-                <include content="Object_Poster">
+                <include name="Object_Poster">
                     <param name="width" value="posterh" />
                 </include>
             </control>
-            <include content="View_List">
+            <include name="View_List">
                 <param name="viewlabel" value="31221" />
                 
                 <param name="width" value="listinfow" />
@@ -66,7 +66,7 @@
             <right>bigpad</right>
             <top>bigpad</top>
             <height>posterh</height>
-            <include content="View_List">
+            <include name="View_List">
                 <param name="viewlabel" value="31215" />
                 
                 <param name="width" value="headlinew" />
@@ -92,11 +92,11 @@
                 <include condition="Skin.HasSetting(SwitchSides)">Defs_LeftSide</include>
                 <include condition="!Skin.HasSetting(SwitchSides)">Defs_RightSide</include>
                 <width>posterh</width>
-                <include content="Object_Poster">
+                <include name="Object_Poster">
                     <param name="width" value="posterh" />
                 </include>
             </control>
-            <include content="View_BigList">
+            <include name="View_BigList">
                 <param name="viewlabel" value="537" />
                 <param name="width" value="listinfow" />
                 <param name="id" value="510" />
@@ -121,7 +121,7 @@
             <right>bigpad</right>
             <top>bigpad</top>
             <height>posterh</height>
-            <include content="View_List">
+            <include name="View_List">
                 <param name="viewlabel" value="544" />
                 
                 <param name="width" value="listinfow" />
@@ -141,7 +141,7 @@
             <top>bigpad</top>
             <height>posterh</height>
             <control type="group">
-                <include content="View_List">
+                <include name="View_List">
                     <param name="viewlabel" value="31143" />
                     
                     <param name="width" value="listmediainfow" />
@@ -168,7 +168,7 @@
                 <include condition="Skin.HasSetting(SwitchSides)">Defs_RightSide</include>
                 <include>Object_Background</include>
                 <include>Object_Scrollbar</include>
-                <include content="View_IconWide_List">
+                <include name="View_IconWide_List">
                     <param name="id" value="577" />
                     <param name="width" value="720" />
                     <param name="name" value="$LOCALIZE[31022]" />
@@ -187,7 +187,7 @@
             <right>bigpad</right>
             <top>bigpad</top>
             <height>posterh</height>
-            <include content="View_InfoList">
+            <include name="View_InfoList">
                 <param name="id" value="53" />
                 <param name="width" value="headlinew" />
                 <param name="name" value="$LOCALIZE[31192]" />
@@ -305,7 +305,7 @@
                     <control type="image">
                         <fadetime>200</fadetime>
                         <aspectratio>scale</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -339,7 +339,7 @@
                 <scrolltime tween="quadratic">400</scrolltime>
                 <visible>$PARAM[condition]</visible>
                 <itemlayout height="72" width="$PARAM[width]">
-                    <include content="View_List_Itemlayout">
+                    <include name="View_List_Itemlayout">
                         <param name="label3" value="$PARAM[label3]" />
                         <param name="label2" value="$PARAM[label2]" />
                     </include>
@@ -348,14 +348,14 @@
                 <focusedlayout height="72" width="$PARAM[width]">
                     <control type="group">
                         <visible>!Control.HasFocus($PARAM[id])</visible>
-                        <include content="View_List_Itemlayout">
+                        <include name="View_List_Itemlayout">
                             <param name="label3" value="$PARAM[label3]" />
                             <param name="label2" value="$PARAM[label2]" />
                         </include>
                     </control>
                     <control type="group">
                         <visible>Control.HasFocus($PARAM[id])</visible>
-                        <include content="View_List_Focusedlayout">
+                        <include name="View_List_Focusedlayout">
                             <param name="label3" value="$PARAM[label3]" />
                             <param name="label2" value="$PARAM[label2]" />
                         </include>
@@ -381,7 +381,7 @@
                     <left>-10</left>
                     <right>-10</right>
                     <bottom>-10</bottom>
-                    <include content="View_InfoList2">
+                    <include name="View_InfoList2">
                         <param name="id" value="553" />
                         <param name="name" value="$LOCALIZE[31220]" />
                         <param name="condition" value="[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]] | [Container.Content(episodes) + [String.IsEqual(Skin.String(Skin.ForcedView.episodes),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.episodes)) ]] | [Container.Content(videos) + [String.IsEqual(Skin.String(Skin.ForcedView.videos),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.videos)) ]] | [Container.Content(artists) + [String.IsEqual(Skin.String(Skin.ForcedView.artists),$LOCALIZE[31220]) | String.IsEmpty(Skin.String(Skin.ForcedView.artists)) ]]" />
@@ -600,7 +600,7 @@
             <height>posterh</height>
             <include>Object_BigFanart</include>
             
-            <include content="View_List">
+            <include name="View_List">
                 <param name="viewlabel" value="31164" />
                 
                 <param name="width" value="hubitemw" />
@@ -784,7 +784,7 @@
                     <align>right</align>
                     <font>Font-ListInfo</font>
                     <textcolor>ListLabel</textcolor>
-                    <label>$INFO[ListItem.Label2]</label>
+                    <label>$INFO[ListItem.Property(AddonName)]</label>
                     <visible>!$PARAM[label3] + !Skin.HasSetting(lists.dontshowextralabels)</visible>
                     <visible>!String.IsEmpty(ListItem.Overlay) + !Container.Content(seasons) + !Container.Content(sets) + $PARAM[label2]</visible>
                 </control>
@@ -952,7 +952,7 @@
                     <align>right</align>
                     <font>Font-ListInfo</font>
                     <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label2]</label>
+                    <label>$INFO[ListItem.Property(AddonName)]</label>
                     <visible>!$PARAM[label3] + !Skin.HasSetting(lists.dontshowextralabels)</visible>
                     <visible>!String.IsEmpty(ListItem.Overlay) + !Container.Content(seasons) + !Container.Content(sets) + $PARAM[label2]</visible>
                 </control>
@@ -985,13 +985,13 @@
                     <scrolltime tween="quadratic">400</scrolltime>
                     <visible>$PARAM[condition]</visible>
                     <itemlayout height="72" width="$PARAM[width]">
-                        <include content="View_List_Itemlayout">
+                        <include name="View_List_Itemlayout">
                             <param name="label3" value="$PARAM[label3]" />
                             <param name="label2" value="$PARAM[label2]" />
                         </include>
                     </itemlayout>
                     <focusedlayout height="72" width="$PARAM[width]">
-                        <include content="View_List_Focusedlayout">
+                        <include name="View_List_Focusedlayout">
                             <param name="label3" value="$PARAM[label3]" />
                             <param name="label2" value="$PARAM[label2]" />
                         </include>
@@ -1008,7 +1008,7 @@
             <bottom>bigpad</bottom>
             <width>104</width>
             <aspectratio>keep</aspectratio>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
         </control>
         <control type="label">
             <left>144</left>
@@ -1018,8 +1018,8 @@
             <align>left</align>
             <font>Font-ListInfo</font>
             <textcolor>ListLabel</textcolor>
-            <label>$INFO[ListItem.Label2]</label>
-            <visible>!String.IsEmpty(ListItem.Label2)</visible>
+            <label>$INFO[ListItem.Property(AddonName)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
             <left>144</left>
@@ -1028,7 +1028,7 @@
             <height>70%</height>
             <textcolor>ListLabel</textcolor>
             <label>$INFO[ListItem.Label]</label>
-            <visible>!String.IsEmpty(ListItem.Label2)</visible>
+            <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
             <left>144</left>
@@ -1037,7 +1037,7 @@
             <height>100%</height>
             <textcolor>ListLabel</textcolor>
             <label>$INFO[ListItem.Label]</label>
-            <visible>String.IsEmpty(ListItem.Label2)</visible>
+            <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
     </include>
 
@@ -1051,7 +1051,7 @@
             <bottom>bigpad</bottom>
             <width>104</width>
             <aspectratio>keep</aspectratio>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
         </control>
         <control type="label">
             <left>144</left>
@@ -1061,8 +1061,8 @@
             <align>left</align>
             <font>Font-ListInfo</font>
             <textcolor>Selected</textcolor>
-            <label>$INFO[ListItem.Label2]</label>
-            <visible>!String.IsEmpty(ListItem.Label2)</visible>
+            <label>$INFO[ListItem.Property(AddonName)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
             <left>144</left>
@@ -1071,7 +1071,7 @@
             <height>70%</height>
             <textcolor>Selected</textcolor>
             <label>$INFO[ListItem.Label]</label>
-            <visible>!String.IsEmpty(ListItem.Label2)</visible>
+            <visible>!String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
         <control type="label">
             <left>144</left>
@@ -1080,7 +1080,7 @@
             <height>100%</height>
             <textcolor>Selected</textcolor>
             <label>$INFO[ListItem.Label]</label>
-            <visible>String.IsEmpty(ListItem.Label2)</visible>
+            <visible>String.IsEmpty(ListItem.Property(AddonName))</visible>
         </control>
     </include>
 

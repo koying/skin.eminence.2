@@ -15,7 +15,7 @@
             <include>Animation_SlideIn_Bounce</include>
             <include>Animation_FadeOut</include>
 
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31232]" />
                 <param name="icon" value="special://skin/extras/icons/kodi.png" />
             </include>

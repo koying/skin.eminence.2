@@ -14,7 +14,7 @@
                 <top>-8</top>
                 <bottom>bigpad</bottom>
                 <include>Dialog_Background</include>
-                <include content="Dialog_Top_IconHeader">
+                <include name="Dialog_Top_IconHeader">
                     <param name="label" value="$INFO[ListItem.Label]" />
                     <param name="icon" value="special://skin/extras/icons/pictures.png" />
                 </include>
@@ -26,10 +26,10 @@
                     <include>Object_FlatBackground</include>
                     <control type="image">
                         <aspectratio>keep</aspectratio>
-                        <texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </control>
-                <include content="Dialog_FavouriteList">
+                <include name="Dialog_FavouriteList">
                     <param name="id" value="5" />
                     <param name="moveid" value="noop" />
                     <param name="left" value="688" />

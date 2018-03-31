@@ -9,7 +9,7 @@
             <bottom>64</bottom>
             <height>504</height>
             <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$ADDON[script.skin.helper.colorpicker 32011]" />
                 <param name="icon" value="special://skin/extras/icons/filebox.png" />
             </include>
@@ -39,7 +39,7 @@
                         <right>bigpad</right>
                         <bottom>bigpad</bottom>
                         <aspectratio>keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout width="138" height="138">
@@ -56,7 +56,7 @@
                         <right>bigpad</right>
                         <bottom>bigpad</bottom>
                         <aspectratio>keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                     </control>
                 </focusedlayout>
             </control>

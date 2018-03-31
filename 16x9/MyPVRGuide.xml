@@ -78,7 +78,7 @@
                                 <bottom>10</bottom>
                                 <right>10</right>
                                 <width>50</width>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="right">keep</aspectratio>
                             </control>
                         </channellayout>
@@ -120,7 +120,7 @@
                                 <bottom>10</bottom>
                                 <right>10</right>
                                 <width>50</width>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="right">keep</aspectratio>
                             </control>
                         </focusedchannellayout>

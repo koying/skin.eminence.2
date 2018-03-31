@@ -14,7 +14,7 @@
             <bottom>100</bottom>
             <height>676</height>
             <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31228]" />
                 <param name="icon" value="special://skin/extras/icons/paintbrush.png" />
             </include>
@@ -26,7 +26,7 @@
                 <include>Object_FlatBackground</include>
                 <control type="image">
                     <aspectratio>stretch</aspectratio>
-                    <texture background="true" fallback="DefaultAddon.png">$INFO[Container(9000).ListItem.Icon]</texture>
+                    <texture background="true" fallback="DefaultAddon.png">$INFO[Container(9000).ListItem.Property(Icon)]</texture>
                 </control>
             </control>
 
@@ -55,7 +55,7 @@
                             <left>pad</left>
                             <width>300</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
                             <height>100%</height>
@@ -91,7 +91,7 @@
                             <left>pad</left>
                             <width>300</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
                             <height>100%</height>

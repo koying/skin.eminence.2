@@ -17,7 +17,7 @@
         <control type="group">
             <animation effect="fade" start="100" end="0" condition="!Integer.IsGreater(Container.NumItems,0)">Conditional</animation>
             <include>Defs_ViewBackground</include>
-            <include content="Object_Headline">
+            <include name="Object_Headline">
                 <param name="label" value="$VAR[Label_SortLine]" />
             </include>
             <include condition="!Skin.HasSetting(SkinHelper.View.Disabled.550)">Viewtype_List</include>
@@ -42,14 +42,14 @@
             <include condition="!Skin.HasSetting(HorizontalMenus)">Dialog_Center_Def</include>
             <include condition="Skin.HasSetting(HorizontalMenus)">Dialog_Top</include>
             <include condition="Skin.HasSetting(HorizontalMenus)">Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
+            <include name="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31068]" />
                 <param name="icon" value="special://skin/extras/icons/settings.png" />
             </include>
-            <include content="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Center_Arrows" condition="!Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="9000" />
             </include>
-            <include content="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
+            <include name="Dialog_Top_Arrows" condition="Skin.HasSetting(HorizontalMenus)">
                 <param name="id" value="9000" />
             </include>
 

@@ -12,7 +12,7 @@
                 <height>posterh</height>
                 <include>Object_Background</include>
                 <include>Object_Scrollbar</include>
-                <include content="View_Icon">
+                <include name="View_Icon">
                     <param name="id" value="500" />
                     <param name="name" value="536" />
                     <param name="condition" value="[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]] | [Container.Content(seasons) + [String.IsEqual(Skin.String(Skin.ForcedView.seasons),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.seasons)) ]] | [Container.Content(episodes) + [String.IsEqual(Skin.String(Skin.ForcedView.episodes),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.episodes)) ]] | [Container.Content(artists) + [String.IsEqual(Skin.String(Skin.ForcedView.artists),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.artists)) ]] | [Container.Content(albums) + [String.IsEqual(Skin.String(Skin.ForcedView.albums),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.albums)) ]] | [Container.Content(images) + [String.IsEqual(Skin.String(Skin.ForcedView.images),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.images)) ]] | [Container.Content(addons) + [String.IsEqual(Skin.String(Skin.ForcedView.addons),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.addons)) ]] | [Container.Content(genres) + [String.IsEqual(Skin.String(Skin.ForcedView.genres),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.genres)) ]] | [Container.Content(years) + [String.IsEqual(Skin.String(Skin.ForcedView.years),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.years)) ]] | [Container.Content(tags) + [String.IsEqual(Skin.String(Skin.ForcedView.tags),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.tags)) ]] | [Container.Content(studios) + [String.IsEqual(Skin.String(Skin.ForcedView.studios),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.studios)) ]] | [Container.Content(files) + [String.IsEqual(Skin.String(Skin.ForcedView.files),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.files)) ]] | [Container.Content(countries) + [String.IsEqual(Skin.String(Skin.ForcedView.countries),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.countries)) ]] | [Container.Content(directors) + [String.IsEqual(Skin.String(Skin.ForcedView.directors),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.directors)) ]] | [Container.Content(actors) + [String.IsEqual(Skin.String(Skin.ForcedView.actors),$LOCALIZE[536]) | String.IsEmpty(Skin.String(Skin.ForcedView.actors)) ]]" />
@@ -37,7 +37,7 @@
                     <include>Object_Background</include>
                     <include>Object_Scrollbar</include>
                     <width>listinfow</width>
-                    <include content="View_Icon">
+                    <include name="View_Icon">
                         <param name="id" value="59" />
                         <param name="name" value="31141" />
                         <param name="width" value="listinfow" />
@@ -64,7 +64,7 @@
                 <height>posterh</height>
                 <include>Object_Background</include>
                 <include>Object_Scrollbar</include>
-                <include content="View_IconWide">
+                <include name="View_IconWide">
                     <param name="id" value="55" />
                     <param name="name" value="539" />
                     <param name="condition" value="[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[539]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[539]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[539]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]]" />
@@ -85,7 +85,7 @@
                 <height>posterh</height>
                 <include>Object_Background</include>
                 <include>Object_Scrollbar</include>
-                <include content="View_IconFanart">
+                <include name="View_IconFanart">
                     <param name="id" value="56" />
                     <param name="name" value="20445" />
                     <param name="condition" value="[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]] | [Container.Content(episodes) + [String.IsEqual(Skin.String(Skin.ForcedView.episodes),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.episodes)) ]] | [Container.Content(videos) + [String.IsEqual(Skin.String(Skin.ForcedView.videos),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.videos)) ]] | [Container.Content(artists) + [String.IsEqual(Skin.String(Skin.ForcedView.artists),$LOCALIZE[20445]) | String.IsEmpty(Skin.String(Skin.ForcedView.artists)) ]]" />
@@ -301,7 +301,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <include content="$PARAM[include_name]">
+                <include name="$PARAM[include_name]">
                     <param name="include_target" value="$PARAM[include_target]" />
                     <param name="include_content" value="$PARAM[include_content]" />
                 </include>
@@ -515,7 +515,7 @@
                                 <height>48</height>
                                 <align>right</align>
                                 <font>Font-ListInfo-Small</font>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]</label>
                                 <visible>!Window.IsVisible(1131)</visible>
                             </control>
                             <control type="label">
@@ -574,7 +574,7 @@
                                 <align>right</align>
                                 <font>Font-ListInfo-Small</font>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]</label>
                                 <visible>!Window.IsVisible(1131)</visible>
                             </control>
                             <control type="label">
@@ -590,7 +590,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <include content="$PARAM[include_name]">
+                    <include name="$PARAM[include_name]">
                         <param name="include_target" value="$PARAM[include_target]" />
                         <param name="include_content" value="$PARAM[include_content]" />
                     </include>

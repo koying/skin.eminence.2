@@ -13,7 +13,7 @@
             <height>height</height>
 
             <control type="group">
-                <include content="Object_Line">
+                <include name="Object_Line">
                     <param name="width" value="1880" />
                     <param name="label" value="5" />
                 </include>
@@ -67,7 +67,7 @@
                 <control type="group">
                     <description>available modes group</description>
                     <width>935</width>
-                    <include content="Object_Line">
+                    <include name="Object_Line">
                         <param name="width" value="935" />
                         <param name="label" value="$LOCALIZE[15050] ($INFO[Container(20).NumItems])" />
                     </include>
@@ -91,9 +91,9 @@
                                 <left>pad</left>
                                 <width>118</width>
                                 <height>118</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>!String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="image">
                                 <top>pad</top>
@@ -102,14 +102,14 @@
                                 <height>118</height>
                                 <texture>DefaultAudioDSP.png</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="label">
                                 <left>150</left>
                                 <top>bigpad</top>
                                 <right>bigpad</right>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -131,9 +131,9 @@
                                 <left>pad</left>
                                 <width>118</width>
                                 <height>118</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>!String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="image">
                                 <top>pad</top>
@@ -142,7 +142,7 @@
                                 <height>118</height>
                                 <texture>DefaultAudioDSP.png</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -150,7 +150,7 @@
                                 <right>bigpad</right>
                                 <height>60</height>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -168,7 +168,7 @@
                     <left>945</left>
                     <width>935</width>
                     <height>100%</height>
-                    <include content="Object_Line">
+                    <include name="Object_Line">
                         <param name="width" value="935" />
                         <param name="label" value="$LOCALIZE[15051] ($INFO[Container(21).NumItems])" />
                     </include>
@@ -193,9 +193,9 @@
                                 <left>pad</left>
                                 <width>118</width>
                                 <height>118</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>!String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="image">
                                 <top>pad</top>
@@ -204,14 +204,14 @@
                                 <height>118</height>
                                 <texture>DefaultAudioDSP.png</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="label">
                                 <left>150</left>
                                 <top>bigpad</top>
                                 <right>bigpad</right>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -233,9 +233,9 @@
                                 <left>pad</left>
                                 <width>118</width>
                                 <height>118</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
+                                <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>!String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="image">
                                 <top>pad</top>
@@ -244,7 +244,7 @@
                                 <height>118</height>
                                 <texture>DefaultAudioDSP.png</texture>
                                 <aspectratio aligny="center" align="left">keep</aspectratio>
-                                <visible>String.IsEqual(ListItem.Icon,"")</visible>
+                                <visible>String.IsEqual(ListItem.Property(Icon),"")</visible>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -252,7 +252,7 @@
                                 <right>bigpad</right>
                                 <height>60</height>
                                 <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <left>150</left>
@@ -271,7 +271,7 @@
                 <width>100%</width>
                 <top>621</top>
                 <height>69</height>
-                <include content="Object_Line">
+                <include name="Object_Line">
                     <param name="width" value="1880" />
                     <param name="label" value="33063" />
                 </include>
@@ -322,7 +322,7 @@
                 <right>0</right>
                 <height>32</height>
                 <font>Font-RSS</font>
-                <label>$INFO[Container(9000).ListItem.Label2,   ,]</label>
+                <label>$INFO[Container(9000).ListItem.Property(AddonName),   ,]</label>
                 <scroll>true</scroll>
                 <textcolor>LineLabel</textcolor>
                 <wrapmultiline>false</wrapmultiline>

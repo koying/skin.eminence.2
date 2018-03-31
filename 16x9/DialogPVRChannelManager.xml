@@ -17,7 +17,7 @@
                 <left>bigpad</left>
                 <right>bigpad</right>
                 <height>posterh</height>
-                <include content="Object_Line">
+                <include name="Object_Line">
                     <param name="width" value="headlinew" />
                     <param name="label" value="$LOCALIZE[19199]" />
                 </include>
@@ -40,7 +40,7 @@
                                 <width>124</width>
                                 <height>124</height>
                                 <aspectratio>keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                                <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                             </control>
                             <control type="group">
                                 <left>148</left>
@@ -80,7 +80,7 @@
                                 <width>124</width>
                                 <height>124</height>
                                 <aspectratio>keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                                <texture background="true">$INFO[ListItem.Property(Icon)]</texture>
                             </control>
                             <control type="group">
                                 <left>148</left>
@@ -240,7 +240,7 @@
                         <height>338</height>
                         <width>338</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
                         <bordersize>50</bordersize>
                     </control>
                 </control>

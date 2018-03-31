@@ -6,7 +6,7 @@
     <controls>
         <control type="group">
             <include>Defs_InfoBackground</include>
-            <include content="Object_Headline">
+            <include name="Object_Headline">
                 <param name="label" value="19033" />
             </include>
             <control type="group">
@@ -14,7 +14,7 @@
                 <left>bigpad</left>
                 <bottom>bigpad</bottom>
                 <right>bigpad</right>
-                <include content="Object_Poster">
+                <include name="Object_Poster">
                     <param name="flipx" value="false" />
                     <param name="width" value="posterh" />
                 </include>
@@ -44,7 +44,7 @@
                             <right>pad</right>
                             <height>32</height>
                             <font>Font-ListInfo-Small-Bold</font>
-                            <label>[UPPERCASE][COLOR=$VAR[HighlightColor2]]$INFO[ListItem.AddonType][/COLOR][/UPPERCASE]</label>
+                            <label>[UPPERCASE][COLOR=$VAR[HighlightColor2]]$INFO[ListItem.Property(Addon.Type)][/COLOR][/UPPERCASE]</label>
                         </control>
                         <control type="textbox">
                             <top>pad</top>
@@ -65,7 +65,7 @@
                                 <control type="group">
                                     <height>36</height>
                                     <width>100%</width>
-                                    <visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(Addon.Creator))</visible>
                                     <control type="label">
                                         <width>200</width>
                                         <height>36</height>
@@ -80,7 +80,7 @@
                                         <align>left</align>
                                         <height>36</height>
                                         <font>Font-ListInfo-Bold</font>
-                                        <label>$INFO[ListItem.AddonCreator]</label>
+                                        <label>$INFO[ListItem.Property(Addon.Creator)]</label>
                                         <textcolor>SubLabel</textcolor>
                                     </control>
                                 </control>
@@ -89,7 +89,7 @@
                                 <control type="group">
                                     <height>36</height>
                                     <width>100%</width>
-                                    <visible>!String.IsEmpty(ListItem.AddonSummary)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(Addon.Summary))</visible>
                                     <control type="label">
                                         <width>200</width>
                                         <height>36</height>
@@ -104,7 +104,7 @@
                                         <align>left</align>
                                         <height>36</height>
                                         <font>Font-ListInfo-Bold</font>
-                                        <label>$INFO[ListItem.AddonSummary]</label>
+                                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                                         <textcolor>SubLabel</textcolor>
                                     </control>
                                 </control>
@@ -144,7 +144,7 @@
                         <align>center</align>
                         <orientation>horizontal</orientation>
                         <control type="group">
-                            <visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(Addon.Version))</visible>
                             <width>370</width>
                             <height>100%</height>
                             <control type="label">
@@ -160,13 +160,13 @@
                                 <align>center</align>
                                 <textcolor>SubLabel</textcolor>
                                 <font>Font-InfoBox-Title</font>
-                                <label>$INFO[ListItem.AddonVersion]</label>
+                                <label>$INFO[ListItem.Property(Addon.Version)]</label>
                             </control>
                         </control>
                         <control type="group">
                             <width>370</width>
                             <height>100%</height>
-                            <visible>!String.IsEmpty(ListItem.AddonStatus)</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(Addon.Status))</visible>
                             <control type="label">
                                 <top>0</top>
                                 <height>32</height>
@@ -180,7 +180,7 @@
                                 <align>center</align>
                                 <textcolor>SubLabel</textcolor>
                                 <font>Font-InfoBox-Title</font>
-                                <label>$INFO[ListItem.AddonStatus]</label>
+                                <label>$INFO[ListItem.Property(Addon.Status)]</label>
                             </control>
                         </control>
 
@@ -251,6 +251,15 @@
                             <include>Defs_OptionButton3</include>
                             <visible>Control.IsEnabled(7)</visible>
                         </control>
+                        <!-- Changelog Button -->
+                        <control type="button" id="10">
+                            <width>auto</width>
+                            <label>24036</label>
+                            <font>Font-ListInfo-Small-Bold</font>
+                            <include>Defs_OptionButton2</include>
+                            <visible>Control.IsEnabled(10)</visible>
+                        </control>
+                     </control>
                     </control>
                 </control>
             </control>
